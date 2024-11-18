@@ -25,16 +25,7 @@
 </head>
 <body>
     <h1>Final Project</h1>
-    <!-- 
-    <ol>
-        <li>Create title</li>
-        <li>Select the title using Javascript</li>
-        <li>Split the title charactors</li>
-        <li>Rejoin each letter with a class</li>
-        <li>Add an event listener to each one</li>
-        <li>On mouse over the letter should animate using CSS</li>
-    </ol>
-     -->
+
     <script>
         const h1 = document.querySelector("h1")
         const letters = h1.innerText.split('')
@@ -52,7 +43,6 @@
         const jsLetters = document.querySelectorAll(".js-letter")
         jsLetters.forEach(node => {
             node.addEventListener("mouseover", function(event){
-                //console.log(this.innerText)
                 this.classList.add("active")
             })
             node.addEventListener("mouseout", function(event){
